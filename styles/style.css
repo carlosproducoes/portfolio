@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font: 16px 'Poppins';
+    margin: 0;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1fr;
+    padding: 13px 50px;
+    background-color: #515151;
+}
+
+header a{
+    color: #d9d9d9;
+    text-decoration: none;
+    font-weight: 500    ;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a:hover{
+    color: #b77dff;
+}
+
+.icone{
+    width: 26px;
+    height: 26px;
+}
+
+/*===========PRINCIPAL===========*/
+
+.principal{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background-image: url("../images/fundo.jpg");
+    background-size: cover;
+    padding: 100px 50px;
+}
+
+.principal div{
+    max-width: 600px;
+}
+
+.principal h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.principal p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.principal a{
+    display: flex;
+    justify-content: center;
+    background-color: #9846FF;
+    color: #ffffff;
+    width: 200px;
+    padding: 10px 20px;
+    margin: auto;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.principal a:hover{
+    background-color: #692fb1;
+}
+
+/*============SOBRE MIM============*/
+
+.sobre-mim{
+    background-color: #9846FF;
+    color: #ffffff;
+    padding: 50px 100px;
+}
+
+.sobre-mim h2{
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.grid-sobre-mim{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 175px;
+    padding: 50px 0;
+}
+
+.grid-sobre-mim h3{
+    font-size: 22px;
+}
+
+.minha-historia{
+    max-width: 400px;
+    text-align: left;
+}
+
+.habilidades{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.habilidade{
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
+    color: #9846FF;
+    padding: 10px 26px;
+    border-radius: 4px;
+}
+
+/*===========SERVIÇOS========*/
+
+.meus-servicos{
+    padding: 50px 100px;
+}
+
+.meus-servicos h2{
+    text-align: center;
+    color: #9846FF;
+}
+
+.servicos{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servico{
+    max-width: 280px;
+    padding: 30px;
+    border-radius: 4px;
+    border: 1px solid #c1c1c1;
+    box-shadow: 3px 5px 4px #00000031;
+}
+
+.servico img{
+    display: block;
+    margin: auto;
+    width: 35px;
+}
+
+.servico h3{
+    font-size: 22px;
+    text-align: center;
+}
+
+/*===========MEUS PROJETOS=============*/
+
+.meus-projetos{
+    padding: 50px 100px;
+}
+
+.meus-projetos h2{
+    text-align: center;
+}
+
+.projetos{
+    padding: 50px 0;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.projeto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.img-projeto{
+    width: 100%;
+    height: 256px;
+    background-color: #d9d9d9;
+}
+
+.info-projeto h3{
+    margin: 20px 0;
+}
+
+.btn-projeto{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #9846FF;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+/*===========CONTATO=============*/
+
+.contato{
+    padding: 50px 100px;
+}
+
+.form-contato{
+    max-width: 680px;
+    margin: auto;
+    padding: 20px 40px;
+    background-color: #9846FF;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 3px 5px 4px #00000031;
+}
+
+.form-contato h2{
+    font-size: 28px;
+    text-align: center;
+}
+
+.form-contato label{
+    font-size: 18px;
+}
+
+.form-contato input{
+    width: 100%;
+    font-size: 22px;
+    background-color: #ffffff20;
+    color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.btn-enviar{
+    display: block;  
+    background-color: #ffffff20;
+    border: 0px none;
+    max-width: 228px;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.btn-enviar:hover{
+    background-color: #cfa8ff90;
+    cursor: pointer;
+}
+
+/*===========FOOTER=============*/
+
+footer{
+    background-color: #515151;
+    margin: 0;
+    padding: 13px 0;
+}
+
+footer p{
+    margin: 0;
+    color: #D9D9D9;
+    text-align: center;
+}
