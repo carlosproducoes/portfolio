@@ -1,8 +1,16 @@
 services:
   php:
-    image: php:8.2-apache
+    build: .
     restart: always
     ports:
       - "80:80"
     volumes:
       - ./:/var/www/html
+  mysql:
+    image: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: portfolio
+      MYSLQ_ROOT_PASSWORD: secret
