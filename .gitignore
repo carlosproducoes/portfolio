@@ -1,4 +1,3 @@
 /vendor/
 /public_html/subdomains/
 .env
-composer.lock
