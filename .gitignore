@@ -1,3 +1,4 @@
 /vendor/
 /subdomains/
 .env
+composer.lock

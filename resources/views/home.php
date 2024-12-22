@@ -7,18 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">CARLOS GONÇALVES</a>
 
-        <nav>
-            <a href="#sobre-mim">SOBRE MIM</a>
-            <a href="#meus-servicos">SERVIÇOS</a>
-            <a href="#meus-projetos">MEUS PROJETOS</a>
-            <a href="#contato">CONTATO</a>
-            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="Ícone Linkedin" class="icone"></a>
-            <a href="https://github.com/carlosproducoes" target="_blank"><img src="images/github.svg" alt="ìcone Github" class="icone"></a>
-        </nav>
-    </header>
+    <?php include "components/menu.php" ?>
 
     <div class="principal">
         <div>
@@ -80,7 +70,7 @@
     </div>
 
     <div class="meus-projetos" id="meus-projetos">
-        <h2>MEUS PROJETOS</h2>
+        <h  2>MEUS PROJETOS</h2>
 
         <div class="projetos">
 

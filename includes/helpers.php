@@ -2,7 +2,7 @@
 
 function view ($name, $args = [])
 {
-    $page = "../resources/views/{$name}.php";
+    $page = __DIR__ . "/../resources/views/{$name}.php";
     extract($args);
     
     require_once $page;
