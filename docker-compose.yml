@@ -1,13 +1,19 @@
 services:
   php:
-    build: .
+    build:
+      context: ./
+      dockerfile: docker/php/Dockerfile
     restart: always
     ports:
       - "80:80"
     volumes:
       - ./:/var/www/html
+    depends_on:
+      - mysql
   mysql:
-    image: mysql
+    build:
+      context: ./
+      dockerfile: docker/mysql/Dockerfile
     restart: always
     ports:
       - "3306:3306"
