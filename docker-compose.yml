@@ -1,8 +1,22 @@
 services:
   php:
-    image: php:8.2-apache
+    build:
+      context: ./
+      dockerfile: docker/php/Dockerfile
     restart: always
     ports:
       - "80:80"
     volumes:
       - ./:/var/www/html
+    depends_on:
+      - mysql
+  mysql:
+    build:
+      context: ./
+      dockerfile: docker/mysql/Dockerfile
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: portfolio
+      MYSQL_ROOT_PASSWORD: secret
