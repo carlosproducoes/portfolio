@@ -61,6 +61,9 @@
     font-style: normal;
 }
 
+:root {
+    --purple: #9846FF;
+}
 
 body{
     font: 16px 'Poppins';
@@ -117,52 +120,6 @@ h3{
 
 .principal a:hover{
     background-color: #692fb1;
-}
-
-/*============SOBRE MIM============*/
-
-.sobre-mim{
-    background-color: #9846FF;
-    color: #ffffff;
-    padding: 50px 100px;
-}
-
-.sobre-mim h2{
-    margin: 0;
-    text-align: center;
-    font-size: 28px;
-}
-
-.grid-sobre-mim{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 175px;
-    padding: 50px 0;
-}
-
-.grid-sobre-mim h3{
-    font-size: 22px;
-}
-
-.minha-historia{
-    max-width: 400px;
-    text-align: left;
-}
-
-.habilidades{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-}
-
-.habilidade{
-    display: inline-block;
-    font-weight: bold;
-    text-align: center;
-    background-color: #ffffff;
-    color: #9846FF;
-    padding: 10px 26px;
-    border-radius: 4px;
 }
 
 /*===========SERVIÇOS========*/
@@ -306,4 +263,55 @@ footer p{
     margin: 0;
     color: #D9D9D9;
     text-align: center;
+}
+
+.section {
+    padding: 50px 100px;
+}
+
+.title {
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+}
+
+.bg-color-purple {
+    background-color: var(--purple);
+}
+
+.bg-color-white {
+    background-color: #ffffff;
+}
+
+.color-purple {
+    color: var(--purple);
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.skill {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
+    color: #9846FF;
+    padding: 10px 26px;
+    border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+    .section {
+        padding: 20px 50px;
+    }
 }

@@ -18,55 +18,16 @@
         </div>
     </div>
 
-    <div class="sobre-mim" id="sobre-mim">
-        <h2>SOBRE MIM</h2>
+    <div class="section bg-color-purple">
 
-        <div class="grid-sobre-mim">
-            <div class="minha-historia">
-                <h3>MINHA HISTÓRIA</h3>
-                <p>Desde criança sou apaixonado por tecnologia, sempre tive curiosidade de ficar pesquisando sobre programação. </p>
-            </div>
+        <h2 class="title color-white">Habilidades</h2>
 
-            <div class="minhas-habilidades">
-                <h3>MINHAS HABILIDADES</h3>
-
-                <div class="habilidades">
-                    <div class="habilidade">HTML5</div>
-                    <div class="habilidade">CSS3</div>
-                    <div class="habilidade">JavaScript</div>
-                    <div class="habilidade">PHP</div>
-                    <div class="habilidade">MySql</div>
-                    <div class="habilidade">GIT</div>
-                    <div class="habilidade">Github</div>
-                    <div class="habilidade">Bootstrap</div>
-                    <div class="habilidade">Laravel</div>
-                </div>
-            </div>
-        </div>    
-    </div>
-
-    <div class="meus-servicos" id="meus-servicos">
-        <h2>SERVIÇOS</h2>
-
-        <div class="servicos">
-            <div class="servico">
-                <img src="./images/star-fill.svg" alt="Ícone estrela">
-                <h3>LANDING PAGE</h3>
-                <p>Potencialize suas campanhas com landing pages que convertem. Criamos páginas de destino envolventes para capturar a atenção dos visitantes.</p>
-            </div>
-
-            <div class="servico">
-                <img src="./images/star-fill.svg" alt="Ícone estrela">
-                <h3>SITES INSTITUCIONAIS</h3>
-                <p>Transformamos ideias em websites incríveis! Desenvolvemos sites responsivos e visualmente atraentes que destacam a singularidade do seu negócio.</p>
-            </div>
-
-            <div class="servico">
-                <img src="./images/star-fill.svg" alt="Ícone estrela">
-                <h3>SISTEMAS WEB</h3>
-                <p>Soluções sob medida para suas necessidades. Sistemas web eficientes que automatizam processos e aumentam a produtividade da sua empresa.</p>
-            </div>
+        <div class="skills">
+            <?php foreach ($skills as $skill): ?>
+                <div class="skill"><?php echo $skill->getName(); ?></div>
+            <?php endforeach; ?>
         </div>
+
     </div>
 
     <div class="meus-projetos" id="meus-projetos">
@@ -106,26 +67,6 @@
             
         </div>
 
-    </div>
-
-    <div class="contato" id="contato">
-        <form action="" class="form-contato">
-            <h2>Entre em contato</h2>
-
-            <label for="nome">Seu nome:</label>
-            <input type="text" name="nome">
-
-            <label for="email">Seu email:</label>
-            <input type="email" name="email">
-
-            <label for="telefone">Seu telefone:</label>
-            <input type="text" name="telefone">
-
-            <label for="mensagem">Como posso te ajudar?</label>
-            <input type="text" name="mensagem">
-
-            <input type="submit" value="Enviar" class="btn-enviar">
-        </form>
     </div>
 
     <footer>

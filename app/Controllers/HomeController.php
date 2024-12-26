@@ -2,12 +2,19 @@
 
 namespace App\Controllers;
 
+use App\DAO\SkillDAO;
+
 class HomeController
 {
 
     public function index ()
     {
-        return view('home');
+        $skillDAO = new SkillDAO();
+        $skills = $skillDAO->getAll();
+
+        return view('home', [
+            "skills" => $skills
+        ]);
     }
 
 }
