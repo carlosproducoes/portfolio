@@ -30,47 +30,39 @@
 
     </div>
 
-    <div class="meus-projetos" id="meus-projetos">
-        <h  2>MEUS PROJETOS</h2>
+    <div class="section">
+        <h2 class="title">Projetos</h2>
 
-        <div class="projetos">
+        <div class="projects">
 
-            <div class="projeto">
-                <img src="" alt="" class="img-projeto">
+            <?php if (count($projects) == 0): ?>
+                <div>Nenhum projeto ainda...</div>
+            <?php endif; ?>
 
-                <div class="info-projeto">
-                    <h3>SISTEMA DE BARBEARIA</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et arcu ligula. Integer quis convallis quam. Integer id nisl sed massa vulputate mollis.</p>
-                    <a href="#" class="btn-projeto">VER PROJETO</a>
+            <?php foreach ($projects as $project): ?>
+                <div class="project">
+                    <img src="" alt="" class="project-image">
+
+                    <div class="project-info">
+                        <h3 class="project-name"><?php echo $project->getName(); ?></h3>
+                        <p class="project-description"><?php echo strlen($project->getDescription()) > 100 ? substr($project->getDescription(), 0, 100) . "..." : $project->getDescription(); ?></p>
+                        <a href="project/<?php echo $project->getId(); ?>" class="project-button">Ver Projeto</a>
+                    </div>
                 </div>
-            </div>
+            <?php endforeach; ?>
 
-            <div class="projeto">
-                <img src="" alt="" class="img-projeto">
-
-                <div class="info-projeto">
-                    <h3>SITE AUTOESCOLA</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et arcu ligula. Integer quis convallis quam. Integer id nisl sed massa vulputate mollis.</p>
-                    <a href="#" class="btn-projeto">VER PROJETO</a>
-                </div>
-            </div>
-
-            <div class="projeto">
-                <img src="" alt="" class="img-projeto">
-
-                <div class="info-projeto">
-                    <h3>SITE ESCRITÓRIO DE ARQUITETURA</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et arcu ligula. Integer quis convallis quam. Integer id nisl sed massa vulputate mollis.</p>
-                    <a href="#" class="btn-projeto">VER PROJETO</a>
-                </div>
-            </div>
-            
         </div>
+        
+        <?php if (count($projects) > 0): ?>
+            <div class="projects-button-div">
+                <a href="#" class="projects-button">Ver Todos Projetos</a>
+            </div>
+        <?php endif; ?>
 
     </div>
 
     <footer>
-        <p>Todos os direitos reservados CARLOS PRODUÇÕES © 2024</p>
+        <p>Todos os direitos reservados <strong>Carlos Produções</strong> © 2024</p>
     </footer>
 
 </body>
